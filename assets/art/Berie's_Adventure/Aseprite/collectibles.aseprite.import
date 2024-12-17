@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bw6nv6c4fvsm0"
+path="res://.godot/imported/collectibles.aseprite-3435e7d0176b52bca83b40a7a7a04b15.res"
+
+[deps]
+
+source_file="res://assets/art/Berie's_Adventure/Aseprite/collectibles.aseprite"
+dest_files=["res://.godot/imported/collectibles.aseprite-3435e7d0176b52bca83b40a7a7a04b15.res"]
+
+[params]
+

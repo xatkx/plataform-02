@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dor0kbufef7hu"]
+
+[ext_resource type="Texture2D" uid="uid://c77npili4pel4" path="res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png" id="1_euxiv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gjyh0"]
+size = Vector2(498.148, 20)
+
+[node name="plataform_test" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.08, 1.08)
+shape = SubResource("RectangleShape2D_gjyh0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(2, 0.2)
+texture = ExtResource("1_euxiv")

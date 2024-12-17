@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://naulyvwxf8h3"
+path="res://.godot/imported/tilemap_softy_sand.aseprite-a8f9b167edb8cdef884bda54c03c3ca2.res"
+
+[deps]
+
+source_file="res://assets/art/Berie's_Adventure/Aseprite/tilemap_softy_sand.aseprite"
+dest_files=["res://.godot/imported/tilemap_softy_sand.aseprite-a8f9b167edb8cdef884bda54c03c3ca2.res"]
+
+[params]
+

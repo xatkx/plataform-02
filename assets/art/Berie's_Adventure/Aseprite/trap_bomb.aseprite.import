@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://c78buynrlr0y3"
+path="res://.godot/imported/trap_bomb.aseprite-bba25a2c8b3d75f869142750c0380cff.res"
+
+[deps]
+
+source_file="res://assets/art/Berie's_Adventure/Aseprite/trap_bomb.aseprite"
+dest_files=["res://.godot/imported/trap_bomb.aseprite-bba25a2c8b3d75f869142750c0380cff.res"]
+
+[params]
+

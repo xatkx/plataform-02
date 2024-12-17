@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bo1yh1xghnnnf"
+path="res://.godot/imported/background.aseprite-ed30723954ac628fcb395eeb8b39869a.res"
+
+[deps]
+
+source_file="res://assets/art/Berie's_Adventure/Aseprite/background.aseprite"
+dest_files=["res://.godot/imported/background.aseprite-ed30723954ac628fcb395eeb8b39869a.res"]
+
+[params]
+

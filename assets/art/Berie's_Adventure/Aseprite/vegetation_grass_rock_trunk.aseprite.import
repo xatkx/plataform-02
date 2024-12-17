@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://b7yug7l2vxpov"
+path="res://.godot/imported/vegetation_grass_rock_trunk.aseprite-dfeb1ff68ccc165636db023a54284f17.res"
+
+[deps]
+
+source_file="res://assets/art/Berie's_Adventure/Aseprite/vegetation_grass_rock_trunk.aseprite"
+dest_files=["res://.godot/imported/vegetation_grass_rock_trunk.aseprite-dfeb1ff68ccc165636db023a54284f17.res"]
+
+[params]
+

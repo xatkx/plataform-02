@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://cybfdnmg5aaei"
+path="res://.godot/imported/trap_spike.aseprite-bd8d8f1632a2b0607f87ab559a12a4b0.res"
+
+[deps]
+
+source_file="res://assets/art/Berie's_Adventure/Aseprite/trap_spike.aseprite"
+dest_files=["res://.godot/imported/trap_spike.aseprite-bd8d8f1632a2b0607f87ab559a12a4b0.res"]
+
+[params]
+

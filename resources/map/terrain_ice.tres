@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StatsWorld" load_steps=2 format=3 uid="uid://cwr56bdecg1n0"]
+
+[ext_resource type="Script" path="res://resources/class ress/statsworld.gd" id="1_hv8t7"]
+
+[resource]
+script = ExtResource("1_hv8t7")
+gravity = 980
+accel_move = 550.0
+fricc_move = 150.0
+accel_fly_move = 2200.0
+fricc_fly_move = 100.0
