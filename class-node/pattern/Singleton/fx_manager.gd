@@ -1,5 +1,6 @@
 class_name AudioManager extends Node
 
+var current_streamPlayer:AudioStreamPlayer
 var fx:AudioStreamOggVorbis
 var colletion_Streamplayer:Array[AudioStreamPlayer];
 var max_streamplayer:int = 10;
@@ -23,21 +24,22 @@ func _get_or_create_streamPlayer() -> AudioStreamPlayer:
 func _ready() -> void:
 	_create_streamPlayer(4);
 func play(stream:AudioStream, volumen:float, pitch:float) -> void:
-	var current_streamPlayer:AudioStreamPlayer = _get_or_create_streamPlayer();
-	#if current_streamPlayer.playing:
+	var streamPlayer:AudioStreamPlayer = _get_or_create_streamPlayer();
+	#if streamPlayer.playing:
 		
 		#for i in colletion_Streamplayer:
-			#current_streamPlayer = i;
+			#streamPlayer = i;
 			#if i.playing:
-				#current_streamPlayer = null
+				#streamPlayer = null
 				#continue
 			#break
-		#if !current_streamPlayer:
+		#if !streamPlayer:
 			#var new_streamplayer = AudioStreamPlayer.new();
 			#colletion_Streamplayer.append(new_streamplayer);
-			#current_streamPlayer = new_streamplayer;
-	current_streamPlayer.stream = stream;
-	current_streamPlayer.volume_db = volumen;
-	current_streamPlayer.pitch_scale = pitch;
-	current_streamPlayer.autoplay
-	current_streamPlayer.play();
+			#streamPlayer = new_streamplayer;
+	streamPlayer.stream = stream;
+	streamPlayer.volume_db = volumen;
+	streamPlayer.pitch_scale = pitch;
+	streamPlayer.autoplay
+	streamPlayer.play();
+	current_streamPlayer = streamPlayer;

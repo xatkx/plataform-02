@@ -3,7 +3,7 @@ class_name  Jugador extends CharacterBody2D
 
 var flip = 1;
 var portal_obj:PortalData;
-
+var gravity_enable:bool = true;
 @export var SPEED = 300.0
 @export var JUMP_VELOCITY = -450.0
 @export var stats_terrain:StatsWorld;
@@ -42,7 +42,7 @@ var is_fall:bool:
 	set(value):
 		pass
 	get():
-		return velocity.y > 1;
+		return !self.is_on_floor();
 
 func _ready() -> void:
 	animation_tree = $Animation/AnimationTree;
@@ -51,10 +51,11 @@ func _ready() -> void:
 	portal_obj = PortalData.new();
 
 func _physics_process(delta: float) -> void:
+
 	move_and_slide();
 	flip_sprite();
-	if !is_on_floor():
-		velocity.y += stats_terrain.gravity * delta;
+	if gravity_enable:
+		gravity(delta)
 	put_terrain();
 func _input(event: InputEvent) -> void:
 	axis = Input.get_vector("left","right","up","down");
@@ -65,7 +66,9 @@ func flip_sprite() -> void:
 		flip = -1;
 	
 	$Animation/Sprite.scale.x = flip
-
+func gravity(delta) -> void:
+	if !is_on_floor():
+		velocity.y += stats_terrain.gravity * delta;
 func put_terrain() -> void:
 	var terrain = ray_cast_down.get_collider();
 	if terrain is Terrain:

@@ -505,7 +505,7 @@ texture_filter = 1
 texture = ExtResource("1_sfye3")
 hframes = 9
 vframes = 9
-frame = 3
+frame = 2
 metadata/_aseprite_wizard_config_ = {
 "i_mode": -1,
 "keep_anim_length": false,
@@ -538,6 +538,7 @@ anim_player = NodePath("../Animation")
 script = ExtResource("2_fwmmu")
 holder = NodePath("..")
 default_state = NodePath("Idle")
+debugg = true
 
 [node name="Idle" type="Node" parent="State_Machine"]
 script = ExtResource("4_8uvbo")
