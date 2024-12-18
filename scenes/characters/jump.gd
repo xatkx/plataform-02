@@ -12,13 +12,17 @@ func enter() -> void:
 	node_controller.move_and_slide();
 
 func physics_process(delta: float) -> void:
+	var acceleration = delta * player.stats_terrain.accel_fly_move;
+	var friccion = delta * player.stats_terrain.fricc_fly_move;
 	if player.try_move:
-		accel_move(delta*player.stats_terrain.accel_fly_move)
+		accel_move(acceleration)
 	else:
-		fricc_move(delta*player.stats_terrain.fricc_fly_move)
+		fricc_move(friccion)
 		
 	if player.velocity.y > 0:
 		state_machine.travel_to(StateName.FALL);
-func unhandled_input(event: InputEvent) -> void:
 	if player.try_dash:
 		state_machine.travel_to(StateName.DASH)
+#func unhandled_input(event: InputEvent) -> void:
+	#if player.try_dash:
+		#state_machine.travel_to(StateName.DASH)

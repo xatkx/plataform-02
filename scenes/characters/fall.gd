@@ -20,11 +20,11 @@ func physics_process(delta: float) -> void:
 		state_machine.travel_to(StateName.IDLE);
 	elif player.try_move and node_controller.is_on_floor():
 		state_machine.travel_to(StateName.RUN);
-
-func unhandled_input(event: InputEvent) -> void:
 	if player.try_dash:
-		state_machine.travel_to(StateName.DASH)
-
-
+			state_machine.travel_to(StateName.DASH)
+#func unhandled_input(event: InputEvent) -> void:
+	#if player.try_dash:
+		#state_machine.travel_to(StateName.DASH);
+		
 func _on_timeoffall_timeout() -> void:
 	is_grounded = true;

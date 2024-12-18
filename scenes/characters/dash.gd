@@ -1,5 +1,5 @@
 extends PlayerState
-
+var timer:Timer = Timer.new();
 const ATTACK_SWING = preload("res://assets/sonido/ogg/AttackSwing.ogg");
 @export var max_dash:= 500;
 @export var dash_fricc:= 3000;
@@ -12,11 +12,12 @@ func _end_dash(delta:float) -> void:
 		#state_machine.travel_to(StateName.FALL);
 	if !player.try_move:
 		state_machine.travel_to(StateName.IDLE);
-	if player.try_move:
-		state_machine.travel_to(StateName.RUN);
+	#if player.try_move:
+		#state_machine.travel_to(StateName.RUN);
 func should_end_dash(value:float) -> bool:
 	return abs(player.velocity.x) < value;
 func enter():
+
 # configurar el estado inicial
 	player.smoth.emitting = true
 	player.smoth.direction.x = player.axis.x
