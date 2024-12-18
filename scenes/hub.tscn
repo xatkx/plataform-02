@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvpngrqw305ul"]
+
+[ext_resource type="Script" path="res://scenes/script/fps.gd" id="1_0omu5"]
+
+[node name="HUB" type="CanvasLayer"]
+
+[node name="fps" type="Label" parent="."]
+offset_right = 137.0
+offset_bottom = 37.0
+text = "FPS: "
+script = ExtResource("1_0omu5")
