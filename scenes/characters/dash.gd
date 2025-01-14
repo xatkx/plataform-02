@@ -7,13 +7,14 @@ var before_gravity:int = 0
 func _end_dash(delta:float) -> void:
 	#player.stats_terrain.gravity = before_gravity;
 	#player.velocity.y += player.stats_terrain.gravity * delta
+	player.velocity.x = 0
 	player.gravity_enable = true;
-	#if !player.is_on_floor():
-		#state_machine.travel_to(StateName.FALL);
+	if !player.is_on_floor():
+		state_machine.travel_to(StateName.FALL);
 	if !player.try_move:
 		state_machine.travel_to(StateName.IDLE);
-	#if player.try_move:
-		#state_machine.travel_to(StateName.RUN);
+	if player.try_move:
+		state_machine.travel_to(StateName.RUN);
 func should_end_dash(value:float) -> bool:
 	return abs(player.velocity.x) < value;
 func enter():

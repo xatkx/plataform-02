@@ -40,7 +40,7 @@ stats_terrain = ExtResource("4_vp81q")
 
 [node name="portal_ice_world" parent="portals" instance=ExtResource("3_pcbln")]
 modulate = Color(1, 0, 1, 1)
-position = Vector2(1419, 389)
+position = Vector2(643, -15)
 portalData = SubResource("Resource_4loce")
 
 [node name="portal_fire_world" parent="portals" instance=ExtResource("3_pcbln")]
@@ -49,7 +49,6 @@ position = Vector2(118, -424)
 portalData = SubResource("Resource_dl2af")
 
 [node name="reapwn" parent="portals" instance=ExtResource("3_pcbln")]
-visible = false
 modulate = Color(1, 0.478431, 0, 1)
-position = Vector2(41.1365, 318.24)
+position = Vector2(446, 319)
 portalData = SubResource("Resource_tk0kt")
