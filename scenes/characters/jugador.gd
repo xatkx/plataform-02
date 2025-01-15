@@ -57,10 +57,12 @@ func _physics_process(delta: float) -> void:
 	if gravity_enable:
 		gravity(delta)
 	put_terrain();
+
 func _input(event: InputEvent) -> void:
 	#axis = Input.get_vector("left","right","up","down");
 	axis.x = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 	axis.y = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
+
 func flip_sprite() -> void:
 	if axis.x > 0:
 		flip = 1

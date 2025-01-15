@@ -10,7 +10,8 @@
 [sub_resource type="Resource" id="Resource_j5fhj"]
 script = ExtResource("4_yf7t3")
 Destiny = "level_00"
-Id_portal = 1
+Id_portal = 2
+go_to_portal = 0
 is_active = true
 
 [node name="Level_00" type="Node2D"]
@@ -28,4 +29,8 @@ stats_terrain = ExtResource("4_fkuyp")
 
 [node name="portal4" parent="portals" instance=ExtResource("3_exy0b")]
 position = Vector2(473, 217)
+portalData = SubResource("Resource_j5fhj")
+
+[node name="portal5" parent="portals" instance=ExtResource("3_exy0b")]
+position = Vector2(899, 203)
 portalData = SubResource("Resource_j5fhj")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://c8texfmepyu6i"]
+[gd_scene load_steps=11 format=4 uid="uid://c8texfmepyu6i"]
 
 [ext_resource type="Script" path="res://scenes/Levels/scripts/level_00.gd" id="1_2bv8c"]
 [ext_resource type="TileSet" uid="uid://bvddrop0ihwv7" path="res://resources/map/general_map_set.tres" id="2_os8hi"]
@@ -11,18 +11,28 @@
 script = ExtResource("4_oxp1n")
 Destiny = "level_01"
 Id_portal = 1
+go_to_portal = 0
 is_active = true
 
 [sub_resource type="Resource" id="Resource_dl2af"]
 script = ExtResource("4_oxp1n")
-Destiny = "level_01"
+Destiny = "level_00"
+Id_portal = 3
+go_to_portal = 2
+is_active = true
+
+[sub_resource type="Resource" id="Resource_g0otv"]
+script = ExtResource("4_oxp1n")
+Destiny = "level_00"
 Id_portal = 2
+go_to_portal = 3
 is_active = true
 
 [sub_resource type="Resource" id="Resource_tk0kt"]
 script = ExtResource("4_oxp1n")
 Destiny = ""
 Id_portal = 0
+go_to_portal = 0
 is_active = false
 
 [node name="Level_00" type="Node2D"]
@@ -47,6 +57,11 @@ portalData = SubResource("Resource_4loce")
 modulate = Color(1, 0.478431, 0, 1)
 position = Vector2(118, -424)
 portalData = SubResource("Resource_dl2af")
+
+[node name="portal_fire_world2" parent="portals" instance=ExtResource("3_pcbln")]
+modulate = Color(1, 0.478431, 0, 1)
+position = Vector2(1050, 329)
+portalData = SubResource("Resource_g0otv")
 
 [node name="reapwn" parent="portals" instance=ExtResource("3_pcbln")]
 modulate = Color(1, 0.478431, 0, 1)

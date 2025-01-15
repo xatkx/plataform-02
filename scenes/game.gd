@@ -9,5 +9,5 @@ func _on_level_manager_change_lv(lv: Level) -> void:
 	
 	var portals = get_tree().get_nodes_in_group("portal");
 	for portal:Portal in portals:
-		if portal.portalData.Id_portal == player.portal_obj.Id_portal:
+		if portal.portalData.Id_portal == player.portal_obj.go_to_portal:
 			portal.respawn(player)
