@@ -1,12 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://6i8gh7ndumj1"]
+[gd_scene load_steps=13 format=3 uid="uid://6i8gh7ndumj1"]
 
-[ext_resource type="Script" path="res://scenes/game.gd" id="1_5s745"]
+[ext_resource type="Script" path="res://scenes/script/game.gd" id="1_5s745"]
 [ext_resource type="Script" path="res://class-node/pattern/Singleton/Level_Manager.gd" id="1_68vc1"]
 [ext_resource type="PackedScene" uid="uid://c8texfmepyu6i" path="res://scenes/Levels/level_00.tscn" id="1_ia2nn"]
 [ext_resource type="PackedScene" uid="uid://d2ewfhlt3hw5k" path="res://scenes/characters/jugador.tscn" id="2_xkcf0"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_r0oss"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_kkua2"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="7_uh3ao"]
+[ext_resource type="PackedScene" uid="uid://bvpngrqw305ul" path="res://scenes/hub.tscn" id="8_tdm4w"]
 
 [sub_resource type="Resource" id="Resource_8r0jt"]
 script = ExtResource("6_kkua2")
@@ -68,6 +69,8 @@ energy = 0.7
 environment = SubResource("Environment_kdfg0")
 camera_attributes = SubResource("CameraAttributesPhysical_b0abf")
 compositor = SubResource("Compositor_25erb")
+
+[node name="HUB" parent="Setting" instance=ExtResource("8_tdm4w")]
 
 [connection signal="change_lv" from="LevelManager" to="." method="_on_level_manager_change_lv"]
 
