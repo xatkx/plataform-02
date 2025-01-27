@@ -2,9 +2,9 @@ extends PlayerState
 const FOOTSTEPS_CONCRETE_1 = preload("res://assets/sonido/steps/FootstepsConcrete1.ogg")
 
 func runs():
-	FxManager.play(FOOTSTEPS_CONCRETE_1,2 ,3);
+	FxManager.play(FOOTSTEPS_CONCRETE_1,-4 ,3.5);
 func run2():
-	FxManager.play(FOOTSTEPS_CONCRETE_1,2,3);
+	FxManager.play(FOOTSTEPS_CONCRETE_1,-4 ,3.5);
 
 func enter() -> void:
 	player.playback.travel(AnimationName.RUN);

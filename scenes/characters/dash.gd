@@ -1,8 +1,8 @@
 extends PlayerState
 var timer:Timer = Timer.new();
 const ATTACK_SWING = preload("res://assets/sonido/ogg/AttackSwing.ogg");
-@export var max_dash:= 500;
-@export var dash_fricc:= 3000;
+@export var max_dash:= 350;
+@export var dash_fricc:= 1500;
 var before_gravity:int = 0
 func _end_dash(delta:float) -> void:
 	#player.stats_terrain.gravity = before_gravity;
