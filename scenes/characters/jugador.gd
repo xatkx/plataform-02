@@ -86,7 +86,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	animation_setting();
-	#animation_setting_debugg()+++++
+	animation_setting_debugg()
 	move_and_slide();
 	flip_sprite();
 	if gravity_enable:
