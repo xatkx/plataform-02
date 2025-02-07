@@ -23,7 +23,7 @@ func enter():
 	player.smoth.emitting = true
 	player.smoth.direction.x = player.axis.x
 	FxManager.play(ATTACK_SWING,5,2.0);
-	player.playback.travel(AnimationName.DASH)
+	#player.playback.travel(AnimationName.DASH)
 	#configurar el estado inicial del dash y desabilitar gravedad
 	player.velocity.x = player.axis.x * player.SPEED + player.axis.x * max_dash
 	#before_gravity = player.stats_terrain.gravity;

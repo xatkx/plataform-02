@@ -33,6 +33,14 @@ default_lv = ExtResource("1_ia2nn")
 [node name="Sprite" parent="Jugador/Animation" index="0"]
 frame = 1
 
+[node name="AnimationTree" parent="Jugador/Animation" index="2"]
+parameters/conditions/Dash = false
+parameters/conditions/Fall = false
+parameters/conditions/Grounded = false
+parameters/conditions/Idle = false
+parameters/conditions/Jump = false
+parameters/conditions/Run = false
+
 [node name="PhantomCamera2D" type="Node2D" parent="Jugador" node_paths=PackedStringArray("follow_target")]
 position = Vector2(10, 10)
 script = ExtResource("5_r0oss")

@@ -2,7 +2,8 @@ extends PlayerState
 
 
 func enter() -> void:
-	player.playback.travel(AnimationName.IDLE);
+	#player.playback.travel(AnimationName.IDLE);
+	pass
 	
 func physics_process(delta: float) -> void:
 	fricc_move(delta*player.stats_terrain.fricc_move)
