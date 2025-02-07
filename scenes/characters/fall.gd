@@ -5,7 +5,7 @@ var is_grounded:bool = false;
 func enter() -> void:
 	is_grounded = false
 	timeoffall.start();
-	player.playback.travel(AnimationName.FALL);
+	#player.playback.travel(AnimationName.FALL);
 	
 	
 func physics_process(delta: float) -> void:

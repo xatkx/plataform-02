@@ -4,6 +4,7 @@ signal used_portal
 
 @export var portalData = PortalData.new();
 var enable:bool= false
+
 func respawn(player):
 	player.position = self.position - Vector2(0,-20)
 

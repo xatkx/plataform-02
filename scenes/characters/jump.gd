@@ -7,7 +7,7 @@ func enter() -> void:
 	FxManager.play(PRE_JUMP_7,-15.0,1.8);
 
 	node_controller = node_controller as Jugador;
-	node_controller.playback.travel(AnimationName.JUMP);
+	#node_controller.playback.travel(AnimationName.JUMP);
 	node_controller.velocity.y = player.JUMP_VELOCITY;
 	node_controller.move_and_slide();
 
